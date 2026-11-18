@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My profile - FreelanceHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Freelance<span>Hub</span></h1>
+  <nav>
+    <a href="index.html">Browse</a>
+    <a href="post-project.html">Post project</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="profile.html" class="active">My profile</a>
+  </nav>
+  <label class="role">I am a
+    <select id="role">
+      <option value="client">Client</option>
+      <option value="freelancer">Freelancer</option>
+    </select>
+  </label>
+</header>
+
+<main>
+<section id="profile">
+    <h2>My freelancer profile</h2>
+    <p id="profileNote" class="note" hidden>Switch to the Freelancer role to edit your profile.</p>
+    <form id="profileForm" class="form">
+      <label>Full name <input id="fname" required minlength="3"></label>
+      <label>Headline <input id="ftitle" required placeholder="e.g. Logo and brand designer"></label>
+      <label>Category <select id="fcat"></select></label>
+      <label>Rate (₹/hr) <input id="frate" type="number" min="50" required></label>
+      <label>About you <textarea id="fbio" rows="3" required></textarea></label>
+      <label>Portfolio items (one per line) <textarea id="fport" rows="3" required></textarea></label>
+      <button class="primary">Save profile</button>
+    </form>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

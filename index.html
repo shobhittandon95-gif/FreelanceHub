@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Browse freelancers - FreelanceHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Freelance<span>Hub</span></h1>
+  <nav>
+    <a href="index.html" class="active">Browse</a>
+    <a href="post-project.html">Post project</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="profile.html">My profile</a>
+  </nav>
+  <label class="role">I am a
+    <select id="role">
+      <option value="client">Client</option>
+      <option value="freelancer">Freelancer</option>
+    </select>
+  </label>
+</header>
+
+<main>
+<section id="browse">
+    <div class="filters">
+      <input id="search" type="search" placeholder="Search by name or skill">
+      <select id="cat"></select>
+      <input id="maxp" type="number" min="0" placeholder="Max rate (₹/hr)">
+      <select id="sort">
+        <option value="rating">Top rated</option>
+        <option value="low">Rate: low to high</option>
+        <option value="high">Rate: high to low</option>
+      </select>
+    </div>
+    <div id="detail" class="card" style="display:none"></div>
+    <div id="list" class="grid"></div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

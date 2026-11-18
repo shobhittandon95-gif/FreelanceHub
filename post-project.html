@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Post a project - FreelanceHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Freelance<span>Hub</span></h1>
+  <nav>
+    <a href="index.html">Browse</a>
+    <a href="post-project.html" class="active">Post project</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="profile.html">My profile</a>
+  </nav>
+  <label class="role">I am a
+    <select id="role">
+      <option value="client">Client</option>
+      <option value="freelancer">Freelancer</option>
+    </select>
+  </label>
+</header>
+
+<main>
+<section id="post">
+    <h2>Post a project</h2>
+    <form id="postForm" class="form">
+      <p id="targetNote" class="note" hidden></p>
+      <label>Project title <input id="ptitle" required minlength="5" maxlength="80"></label>
+      <label>Category <select id="pcat"></select></label>
+      <label>Budget (₹) <input id="pbudget" type="number" min="100" required></label>
+      <label>Deadline <input id="pdeadline" type="date" required></label>
+      <label>Describe what you need <textarea id="pdesc" rows="4" required minlength="20"></textarea></label>
+      <button class="primary">Post project</button>
+    </form>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
